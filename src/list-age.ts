@@ -11,7 +11,7 @@ import {customElement, property} from 'lit/decorators.js';
    override render() {
      return html`
         <p @myage=${this.updateName}><slot></slot></p>
-        <span>Historique de recherche:</span>
+        <span>Historique:</span>
         <ul>
           ${this.ageItems.map(
             item => html`
